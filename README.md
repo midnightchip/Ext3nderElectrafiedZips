@@ -7,8 +7,8 @@ The Ext3nderRC.zip is for RC versions of Electra, The Ext3nderElectrified is for
 b11-3 on hand).If you are having error 81, revoke the certificates, try removing the provision profiles, and if all else fails install it again. 
 You may need to run uicache after installing and respringing wouldn't hurt.
 I'm not liable for any damage you do to your device, just fyi.
-  -MidnightChips
+-  -MidnightChips
 
 -If you need to install the RC version you will need to download the following packages using cydia, and then run the script. 
 -Dependencies to install :  ldid, curl, unzip, coreutils, zip .
-  -ianne.
+-  -ianne.
