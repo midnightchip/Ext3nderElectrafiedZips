@@ -10,5 +10,6 @@ I'm not liable for any damage you do to your device, just fyi.
 -  -MidnightChips
 
 -If you need to install the RC version you will need to download the following packages using cydia, and then run the script. 
+
 -Dependencies to install :  ldid, curl, unzip, coreutils, zip .
 -  -ianne.
