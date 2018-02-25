@@ -11,5 +11,5 @@ I'm not liable for any damage you do to your device, just fyi.
 
 -If you need to install the RC version you will need to download the following packages using cydia, and then run the script. 
 
--Dependencies to install :  ldid, curl, unzip, coreutils, zip .
+-Dependencies to install :  ldid, curl, unzip, coreutils, zip, these can be found in the iOS-Toolkit on bigboss.
 -  -ianne.
