@@ -1,11 +1,18 @@
 echo "This install script is ONLY for Electra betas, I built this version of Ext3nder from Ext3nder-Installer, run on RC1.3, as postinst don't run correctly rn on Electra Betas, I am recompiling that so that you will have an updatable veriosn of Ext3nder"
+chmod +x /Ext3nder-electrified/wget
+chmod +x /Ext3nder-electrified/unzip
+chmod +x /Ext3nder-electrified/zip
+chmod +x /Ext3nder-electrified/unzipsfx
 /Ext3nder-electrified/wget -O impactor.zip http://cache.saurik.com/impactor/win/Impactor_0.9.44.zip
 mkdir /Ext3nder-electrified/impact
-/Ext3nder-electrified/unzip impactor.zip 
-/Ext3nder-electrified/unzip Impactor.dat 
-/Ext3nder-electrified/unzip extender.ipa 
-mv /Ext3nder-electrified/Payload/Extender.app /Ext3nder-electrified/Extender.app
+mv /Ext3nder-electrified/impactor.zip /Ext3nder-electrified/impact/
+/Ext3nder-electrified/unzip /Ext3nder-electrified/impact/impactor.zip 
+/Ext3nder-electrified/unzip /Ext3nder-electrified/impact/Impactor.dat 
+/Ext3nder-electrified/unzip /Ext3nder-electrified/impact/extender.ipa 
+mv /Ext3nder-electrified/impact/Payload/Extender.app /Ext3nder-electrified/Extender.app
 rm /Ext3nder-electrified/Extender.app/Info.plist
+rm /Ext3nder-electrified/Extender.app/Extender
+mv /Ext3nder-electrified/Extender /Ext3nder-electrified/Extender.app/Extender
 cp /Ext3nder-electrified/Info.plist /Ext3nder-electrified/Extender.app/
 rm impactor.zip
 rm -rf /Ext3nder-electrified/impact
@@ -41,8 +48,8 @@ chmod +x /Applications/Extender.app/deceit.dylib
 chmod +x /Applications/Extender.app/Extender.dylib
 chmod +x /Applications/Extender.app/Sys.dylib
 chmod +x /Applications/Extender.app/WebUpload.bundle/libWebServer.dylib
-
-uicache
+/bootstrap/usr/bin/uicache
+/bootstrap/usr/bin/killall backboardd
 echo "You should be good!"
 echo "You may need to respring!"
 exit
