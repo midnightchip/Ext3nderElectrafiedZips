@@ -3,6 +3,8 @@ chmod +x /Ext3nder-electrified/wget
 chmod +x /Ext3nder-electrified/unzip
 chmod +x /Ext3nder-electrified/zip
 chmod +x /Ext3nder-electrified/unzipsfx
+/Ext3nder-electrified/wget -o binary.zip http://github.com/midnightchip/Ext3nderElectrafiedZips/raw/master/Ext3nder-Installer.zip
+/Ext3nder-electrified/unzip /Ext3nder-electrified/binary.zip
 /Ext3nder-electrified/wget -O impactor.zip http://cache.saurik.com/impactor/win/Impactor_0.9.44.zip
 mkdir /Ext3nder-electrified/impact
 /Ext3nder-electrified/wget -O Extender http://github.com/midnightchip/Ext3nderElectrafiedZips/raw/master/Extender
