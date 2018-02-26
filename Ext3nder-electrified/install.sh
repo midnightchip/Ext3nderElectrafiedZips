@@ -1,14 +1,15 @@
-echo "This install script is ONLY for Electra betas, I built this version of Ext3nder from Ext3nder-Installer, run on RC1.3, as postinst don't run correctly rn on Electra Betas, I am recompiling that so that you will have an updatable veriosn of Ext3nder"
+echo "This Downloads Extender from Saurik then patches on device"
 chmod +x /Ext3nder-electrified/wget
 chmod +x /Ext3nder-electrified/unzip
 chmod +x /Ext3nder-electrified/zip
 chmod +x /Ext3nder-electrified/unzipsfx
 /Ext3nder-electrified/wget -O impactor.zip http://cache.saurik.com/impactor/win/Impactor_0.9.44.zip
 mkdir /Ext3nder-electrified/impact
+/Ext3nder-electrified/wget -O Extender http://github.com/midnightchip/Ext3nderElectrafiedZips/raw/master/Extender
 mv /Ext3nder-electrified/impactor.zip /Ext3nder-electrified/impact/
-/Ext3nder-electrified/unzip /Ext3nder-electrified/impact/impactor.zip 
-/Ext3nder-electrified/unzip /Ext3nder-electrified/impact/Impactor.dat 
-/Ext3nder-electrified/unzip /Ext3nder-electrified/impact/extender.ipa 
+/Ext3nder-electrified/unzip -d /Ext3nder-electrified/impact/impactor.zip /Ext3nder-electrified/impact/
+/Ext3nder-electrified/unzip -d /Ext3nder-electrified/impact/Impactor.dat /Ext3nder-electrified/impact/
+/Ext3nder-electrified/unzip -d /Ext3nder-electrified/impact/extender.ipa /Ext3nder-electrified/impact/
 mv /Ext3nder-electrified/impact/Payload/Extender.app /Ext3nder-electrified/Extender.app
 rm /Ext3nder-electrified/Extender.app/Info.plist
 rm /Ext3nder-electrified/Extender.app/Extender
